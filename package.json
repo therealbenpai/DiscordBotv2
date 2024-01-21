@@ -1,0 +1,29 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "docs": "npx typedoc --options typedoc.config.cjs",
+    "compile": "npx tsc",
+    "jit": "npx tsc --watch",
+    "update": "npx tsc && npx typedoc --options typedoc.config.cjs"
+  },
+  "main": "./dist/index.js",
+  "author": "",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "discord-api-types": "^0.37.37",
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^20.10.5",
+    "typedoc": "^0.25.2",
+    "typedoc-plugin-extras": "^3.0.0",
+    "typedoc-plugin-mdn-links": "^3.1.0",
+    "typedoc-plugin-rename-defaults": "^0.6.7"
+  }
+}
